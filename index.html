@@ -2,17 +2,29 @@
 <html>
 <head>
   <title>Jackie</title>
-  <link rel="apple-touch-icon" sizes="57x57" href="star.jpg" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="apple-touch-icon" sizes="57x57" href="wheel.jpg"/>
   <!-- <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
   <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png" />
   <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png" /> -->
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
   <script src="addtohomescreen.min.js"></script>
-  <script type="text/javascript">
-    addToHomescreen();
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxArqiOTf9IsXAlisA6jm3D5rZTp25AjA">
   </script>
+  <script src="script.js"></script>
 </head>
 <body>
-  <h1>JACKIE!</h1>
+  <nav class="navbar navbar-default navbar-static-top header">
+    <h1>Beep Beep Ritchie</h1>
+  </nav>
+  <div class="container">
+    <div id="map-canvas"/>
+  </div>
 </body>
 </html>
