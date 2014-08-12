@@ -33,10 +33,21 @@ $(document).ready(function() {
       var map = new google.maps.Map(document.getElementById("map-canvas"),
           mapOptions);
 
-      var contentString = "<div class='popup'>Things</div>"
+      var contentString = "<div class='popup>Things</div>"
 
       var infowindow = new google.maps.InfoWindow({
-        content: contentString
+        content: document.getElementById("infobox"),
+        disableAutoPan: false,
+        maxWidth: 0,
+        // pixelOffset: new google.maps.Size(-140, 0),
+        zIndex: null,
+        boxStyle: {
+          background: "url('http://blacklabelsociety.com/home/wp-content/uploads/2014/01/spacer.jpg') no-repeat"
+        },
+        closeBoxMargin: "2px 2px 2px 2px",
+        infoBoxClearance: new google.maps.Size(1, 1),
+        pane: "floatPane"
+        // boxStyle: {background-color: black}
       });
 
       var marker = new google.maps.Marker({
@@ -47,7 +58,7 @@ $(document).ready(function() {
       });
 
       google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map,marker);
+        infowindow.open(map,this);
       });
     } 
   }

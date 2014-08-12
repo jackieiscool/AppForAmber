@@ -1,10 +1,17 @@
 html { height: 100% }
-body { height: 100%; margin: 0; padding: 0 }
+body { 
+  background-color: black;
+  height: 100%; 
+  margin: 0; 
+  padding: 0 
+}
+
 #map-canvas { height: 100% }
 
 .header {
   background-image: none;
-  background-color: #FFCC00;
+  background-color: #FFFC33;
+  border-color: black; 
   text-align: center;
 }
 
@@ -13,7 +20,29 @@ body { height: 100%; margin: 0; padding: 0 }
   width: 100%;
 }
 
-.popup {
+.infobox-wrapper {
+  display: none;
+}
+
+#infobox {
+  width: 100%;
+  height: 100%;
+  background-color:black;
+  color:#FFF;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  padding: .5em 1em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow:0 -1px #000000;
+}
+
+/*.popup {
+  width: 100%;
+  height: auto;
+  border-radius: 30;
+  -webkit-border-radius: 30;
   background-color: black;
   color: white;
-}
+}*/
